@@ -7,6 +7,12 @@ To set up this JS project, the author:
 * Created a folder
 * Ran `npm init`
 * Installed Jest with `npm i --D jest`
+* Updated `scripts` in `package.json` to 
+```
+"scripts": {
+    "test": "jest"
+}
+```
 * Added Readme with `touch README.md`
 * Created `.gitignore` file with `touch .gitignore` and added `node_modules` so that node_modules would not be committed to github repo
 
@@ -25,3 +31,14 @@ Run `npm i` to install dependencies
 5. Create `divide function` in `math.js` file
 6. Export all functions from file
 7. Run `npm test` - What happens? Why?
+
+### Part II
+
+1. Create `math.test.js` (one way to add a test file). What is another way you could add tests to this project?
+2. Import functions we want to test to test file
+3. Run `npm test` - What happens? Why?
+4. Create tests for each of the functions in `math.js`
+
+Question: What is the difference between expect vs. assert in Jest?
+
+Question: What is the difference between the test method vs. the it method in Jest? Why might you use the it method?
