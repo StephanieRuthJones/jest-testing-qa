@@ -42,3 +42,12 @@ it('Will correctly divide numbers', () => {
 //     expect(div(0, 10)).toEqual(0)
 //     expect(div(100, 0)).toEqual(Infinity)
 // })
+//Causes us to update division func to
+
+// const div = (x, y) => {
+//     if (y !== 0) {
+//         x / y
+//     } else {
+//         throw new Error("Can't divide by 0")
+//     }
+// }
