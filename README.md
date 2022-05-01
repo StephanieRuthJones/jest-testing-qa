@@ -48,8 +48,12 @@ Run `npm i` to install dependencies
     * Multiply: multiply by 0, multiplying by 1
     * Divide: dividing by 0, dividing num by itself, etc.
 
-**Question:** What is the difference between expect vs. assert in Jest?
-**Answer:** est uses "matchers" to let you test values in different ways. When you're writing tests, you often need to check that values meet certain conditions. expect gives you access to a number of "matchers" that let you validate different things.
+**Question:** What is the expect method in Jest?
+**Answer:** Jest uses "matchers" to let you test values in different ways. When you're writing tests, you often need to check that values meet certain conditions. Expect gives you access to a number of "matchers" that let you validate different things.
+
+The expect function is used every time you want to test a value. You will rarely call expect by itself. Instead, you will use expect along with a "matcher" function to assert something about a value.
+
+
 
 **Question:** What is the difference between the test method vs. the it method in Jest? Why might you use the it method?
 **Answer:** The Jest docs state it is an alias of test. So they are exactly the same from a functional point of view. They exist both to enable to make a readable English sentence from your test. So it's about readability not about functionality.
