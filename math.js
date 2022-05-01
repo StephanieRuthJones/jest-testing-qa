@@ -4,7 +4,7 @@ const mult = (x, y) => x * y
 const div = (x, y) => x / y
 // const div = (x, y) => {
 //     if (y !== 0) {
-//         x / y
+//         return x / y
 //     } else {
 //         throw new Error("Can't divide by 0")
 //     }

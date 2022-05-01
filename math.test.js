@@ -15,7 +15,7 @@ it('Will correctly multiply numbers', () => {
     expect(mult(4, 5)).toEqual(20)
 })
 it('Will correctly divide numbers', () => {
-    expect(div(8, 2)).toEqual(4)
+    expect(div(8, 2)).toEqual(4) 
 })
 
 // -------- PART III --------- //
@@ -42,6 +42,7 @@ it('Will correctly divide numbers', () => {
 //     expect(div(0, 10)).toEqual(0)
 //     expect(div(100, 0)).toEqual(Infinity)
 // })
+
 //Causes us to update division func to
 
 // const div = (x, y) => {
@@ -51,3 +52,11 @@ it('Will correctly divide numbers', () => {
 //         throw new Error("Can't divide by 0")
 //     }
 // }
+
+//NOW our test case is:
+// it('Will correctly divide numbers', () => {
+//     expect(div(8, 2)).toEqual(4)
+//     expect(div(1, 2)).toEqual(.5)
+//     expect(div(0, 10)).toEqual(0)
+//     expect(() => div(10, 0)).toThrow("Can't divide by 0") //throws error out of function bc expect runs code and catches error there
+// })
