@@ -11,9 +11,9 @@ To set up this JS project, the author:
 **Answer:** Shortcut for --save-dev (package will appear in your dev dependencies)
 * Updated `scripts` in `package.json` to 
 ```
-"scripts": {
-    "test": "jest"
-}
+    "scripts": {
+        "test": "jest"
+    }
 ```
 * Added Readme with `touch README.md`
 * Created `.gitignore` file with `touch .gitignore` and added `node_modules` so that node_modules would not be committed to github repo
@@ -38,8 +38,15 @@ Run `npm i` to install dependencies
 
 1. Create `math.test.js` (one way to add a test file). What is another way you could add tests to this project?
 2. Import functions we want to test to test file
-3. Run `npm test` - What happens? Why?
-4. Create tests for each of the functions in `math.js`
+3. Run `npm test`. What happens? Why?
+4. Create one test case for each of the functions in `math.js`
+5. Run the tests. What happens? Why? 
+**Fix the error and make sure tests pass**
+6. Now we need to think about other cases to test:
+    * Add: adding to 0, adding negative numbers
+    * Subtract: subtracting from 0, subtracting negative numbers
+    * Multiply: multiply by 0, multiplying by 1
+    * Divide: dividing by 0, dividing num by itself, etc.
 
 **Question:** What is the difference between expect vs. assert in Jest?
 **Answer:** est uses "matchers" to let you test values in different ways. When you're writing tests, you often need to check that values meet certain conditions. expect gives you access to a number of "matchers" that let you validate different things.
